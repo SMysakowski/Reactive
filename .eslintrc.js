@@ -13,4 +13,17 @@ module.exports = {
   rules: {},
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'import'],
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        alias: {
+          assets: './src/assets',
+          components: './src/components',
+          navigations: './src/navigations',
+          screens: './src/screens',
+        },
+      },
+    },
+  },
 };
