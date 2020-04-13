@@ -1,14 +1,12 @@
 import React from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
-const App = () => {
+import RootNavigator from 'navigations/RootNavigator';
+
+export default () => {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Home</Text>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <RootNavigator />
+    </NavigationContainer>
   );
 };
-
-export default App;
